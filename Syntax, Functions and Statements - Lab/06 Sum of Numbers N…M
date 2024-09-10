@@ -1,0 +1,9 @@
+function sumOfNumbers (argOne, argTwo) {
+    let numOne = Number(argOne);
+    let numTwo = Number(argTwo);
+    let sum = 0;
+    for (let i=numOne; i<=numTwo; i++) {
+        sum += i;
+    }
+    console.log(sum);
+}
