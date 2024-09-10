@@ -1,0 +1,14 @@
+function aggregateElements(args) {
+    let array = [...args];
+    let sum = 0;
+    let inverseSum = 0;
+    let stringSum = '';
+    for (let elem of array) {
+        sum += elem;
+        inverseSum += (1 / elem)
+        stringSum += String(elem);
+    }
+    console.log(sum);
+    console.log(inverseSum);
+    console.log(stringSum);
+}
