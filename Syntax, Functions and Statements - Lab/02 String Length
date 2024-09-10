@@ -1,0 +1,6 @@
+function stringLength (stringOne, stringTwo, stringThree) {
+    let summedString = stringOne + stringTwo + stringThree;
+    console.log(summedString.length);
+    let averageLength = (summedString.length)/3;
+    console.log(Math.floor(averageLength));
+}
