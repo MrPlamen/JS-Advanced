@@ -1,0 +1,8 @@
+function squareOfStars (input) {
+    for (let i = 0; i < input; i++) {
+        for (let j = 0; j < input; j++) {
+            process.stdout.write('*' + ' ');       // to write on the same line is Node.js
+        }
+        console.log('');
+    }
+}
