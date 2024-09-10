@@ -1,0 +1,10 @@
+function largestNum (numOne, numTwo, numThree) {
+    let maxNum = numOne;
+    if (numTwo > maxNum) {
+        maxNum = numTwo;
+    } 
+    if (numThree > maxNum) {
+        maxNum = numThree;
+    }
+    console.log(`The largest number is ${maxNum}.`)
+}
