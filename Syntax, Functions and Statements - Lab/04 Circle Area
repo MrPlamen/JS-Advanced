@@ -1,0 +1,9 @@
+function circleArea (arg) {
+    let inputType = typeof arg;
+    if (inputType == 'number') {
+        let radius = Math.PI * (arg ** 2);
+        console.log(radius.toFixed(2));
+    } else {
+        console.log(`We can not calculate the circle area, because we receive a ${inputType}.`);       
+    }
+}
