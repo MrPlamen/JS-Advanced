@@ -1,0 +1,8 @@
+function greatestCommonDivisor (numberOne, numberTwo) {
+    while (numberTwo !== 0) {
+        let remainder = numberOne % numberTwo;
+        numberOne = numberTwo;
+        numberTwo = remainder;
+    }
+    console.log(numberOne);
+}
