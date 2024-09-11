@@ -1,0 +1,10 @@
+function timeToWalk(numOfSteps, stepLength, speed) {
+    let meters = numOfSteps * stepLength;
+    let numberOfBreaks = Math.floor(meters / 500);
+    let speedMpS = speed*(1000/3600);
+    let timeInSeconds = meters/speedMpS + (60 * numberOfBreaks);
+    let hours = Math.floor(timeInSeconds/3600);
+    let minutes = Math.floor(timeInSeconds%3600/60);
+    let seconds = Math.ceil((timeInSeconds%3600)%60);
+    console.log(`${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`);       //padStart() puts zeros beforehand if needed, till reaching a certain number length
+}
