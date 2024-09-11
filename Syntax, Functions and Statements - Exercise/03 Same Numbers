@@ -1,0 +1,14 @@
+function sameNumbers (number) {
+    number = String(number);
+    let numberToArray = [...number];
+    let sum = 0;
+    let areEqual = true;
+    for (let i = 0; i < numberToArray.length; i++) {
+        sum += Number(numberToArray[i]);
+        if ((typeof numberToArray[i - 1] !== 'undefined') && (numberToArray[i] !== numberToArray[i-1])) {
+            areEqual = false;
+        }
+    }
+    console.log(areEqual);
+    console.log(sum);
+}
