@@ -1,0 +1,7 @@
+function printEveryNthElement(elems, step) {
+    let result = [];
+    for (let i = 0; i < elems.length; i += step) {
+        result.push(elems[i]);
+    }
+    return result;
+}
