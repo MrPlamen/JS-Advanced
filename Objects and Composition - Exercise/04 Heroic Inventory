@@ -1,0 +1,15 @@
+function heroicInventory(arr) {
+    let result = [];
+    for (let string of arr) {
+        let obj = {};
+        let [name, level, items] = string.split(" / ");
+        if (!name) {
+            break;
+        }
+        obj["name"] = name;
+        obj["level"] = Number(level);
+        obj["items"] = items ? items.split(", ") : [];
+        result.push(obj);
+    }
+    console.log(JSON.stringify(result));
+}
