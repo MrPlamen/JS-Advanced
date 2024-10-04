@@ -7,3 +7,4 @@ function calorieObject(arr) {
         }
     }
     console.log(object);
+}
