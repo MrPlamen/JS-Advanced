@@ -11,4 +11,3 @@ function aggregateElements(args) {
     console.log(sum);
     console.log(inverseSum);
     console.log(stringSum);
-}
